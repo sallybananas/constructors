@@ -21,12 +21,14 @@ function playGame(firstTimeBool){
   question = { message: "Play another game?", type: "confirm", name: "play"};
   if (firstTimeBool){
     clear();
-    console.log(figlet.textSync("Welcome!"));
-    question["message"] = "Want to play hangman?";networkInterfaces
+    console.log(figlet.textSync("Welcome Sucka!"));
+    // question["message"] = "Want to play hangman?";
+    // networkInterfaces
   }
   // inquirer prompt!
   inquirer.prompt(question)
   .then(function(input){
+    console.log(input)
     if (input.play){
       clear()
       getQuote().then(quoteObj => {
