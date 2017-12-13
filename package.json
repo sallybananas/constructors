@@ -1,0 +1,31 @@
+{
+  "name": "cli-hangman",
+  "version": "1.0.0",
+  "description": "> a command line interface hangman game",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node game.js",
+    "noKey": "node game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "clear": "0.0.1",
+    "figlet": "^1.2.0",
+    "inquirer": "^3.0.1",
+    "private": "^0.1.8",
+    "request": "^2.79.0",
+    "unirest": "^0.5.1"
+  }
+}
