@@ -4,10 +4,10 @@
 //console.log("game.js is loaded");
 
 //THIS ARE THE NODE MODULES THAT ARE NEEDED
-var MovieDB = require('moviedb')('6733df4b76abb7884b0195f630afb642');
+var MovieDB = require('moviedb')('038855925443a5c749a9e9a1932aa8fa');
 var inquirer = require('inquirer');
 
-//THIS FUNCTION TAKES IN THE USERPROMPT WHICH ASKS THEM TO TYPE IN THEIR FAVORITE ACTOR 
+//THIS FUNCTION TAKES IN THE USERPROMPT WHICH ASKS THEM TO TYPE IN THEIR FAVORITE ACTOR
 function userPrompt(cb) {
     inquirer.prompt([{
         //THIS IS MY PROMPT WHICH WILL BE THE FIRST THIS THE USER SEES UPON INITIATING THE GAME. 
@@ -54,7 +54,7 @@ function getMovies(actorID, cb) {
 function getActorId(actor, cb) {
     MovieDB.searchPerson({ query: actor }, function(err, res) {
         if (err) {
-            //ADDED ERROR HANDLING JUS IN CASE AN ERROR OCCURS 
+            //ADDED ERROR HANDLING JUS IN CASE AN ERROR OCCURS
             console.log('I apologize, but we are having some type of problem at this time!');
             return;
         }
@@ -67,7 +67,7 @@ function getActorId(actor, cb) {
     });
 }
 
-//EXPORTS THE USERPROMPT FOR THE OTHER FILES TO USE. 
+//EXPORTS THE USERPROMPT FOR THE OTHER FILES TO USE.
 module.exports = {
     userPrompt
 };
